@@ -19,5 +19,12 @@
     "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(svg)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "rootDir": "src"
   }
 }
